@@ -14,12 +14,7 @@ function fibonacci(num) {
       b = temp;
     }
 
-    return b;
+    return a;
   }
 }
-
-// Examples
-console.log(fibonacci(1)); // Output: 0
-console.log(fibonacci(5)); // Output: 3}
-
 module.exports = fibonacci;
