@@ -6,15 +6,19 @@ function fibonacci(num) {
   } else {
     let a = 0;
     let b = 1;
-    let temp;
+    let result;
 
     for (let i = 2; i <= num; i++) {
-      temp = a + b;
+      result = a + b;
       a = b;
-      b = temp;
+      b = result;
     }
 
-    return a;
+    return result;
   }
 }
+
+// Examples
+console.log(fibonacci(1)); // Output: 0
+console.log(fibonacci(5)); // Output: 3
 module.exports = fibonacci;
